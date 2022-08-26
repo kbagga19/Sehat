@@ -1,0 +1,379 @@
+.loader-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3AAFA9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+  }
+  body{
+    width: 100vw;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+
+  * {
+    box-sizing: border-box;
+  
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  /* .left{
+  
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+  } */
+
+
+  .bg_image > img{
+    position: absolute;
+     height: 40vh;
+    width: 37vw;
+    object-fit: contain;
+    margin-left: 10px;
+  }
+
+  .bg_image{
+    /* background-color: #FEF0F5; */
+    height: 40vh;
+  }
+ 
+  .material-symbols-outlined {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+    
+  }
+  .mental-button button{
+    padding: 10px;
+    width: 8vw;
+    /* background-color:#5ca4e4 ; */
+    border: 0;
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+  }
+ .physical-button button{
+  padding: 10px;
+    width: 8vw;
+    /* background-color:#5ca4e4 ; */
+    border: 0;
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+ }
+
+ /* .container {
+  max-width: 800px;
+  border: 1px solid black;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+ } */
+  
+.header {
+  position: absolute;
+  padding: 0 238px;
+  margin: -448px 849px 1px;
+  /* height: 465px; */
+  
+
+}
+
+.content {
+
+  padding: 30px 40px;
+  height: 500px;
+  position: relative;
+  margin-top: 400px;
+}
+  
+.content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  transform: translateY(-105%);
+  width: 111.5%;
+  left: -9%;
+  height: 548px;
+  z-index: -1;
+  background: rgb(183,233,234);
+  border-radius: 80% / 20%;
+}
+
+.bg_image {
+  width: 50vw;
+  /* margin-top: 50px; */
+  /* height: 100%; */
+  object-fit: contain;
+  animation: zoom-out 2s ease-out;
+  
+}
+.zoomout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-left: -890px;
+}
+/* .btn-primary.active{
+  color: #fff;
+  background-color: #d54f90 !important;
+  border-color: #d54f90 !important;
+} */
+
+/* .btn {
+  cursor: pointer;
+}
+
+.btn-mental{
+padding: 12px;
+font-size: 23px;
+width: 8vw;
+}
+.btn-physical{
+padding:12px;
+font-size: 23px;
+width: 8vw;
+}
+
+.btn_active_psudo{
+  padding: 12px;
+  width: 8vw;
+  font-size: 23px;
+  background-color: #d54f90;
+  border-color: #d54f90;
+}
+.btn_default_psudo{
+  padding: 12px;
+  width: 8vw;
+  background-color: white;
+  border-color: 1px solid black ;
+  font-size: 23px;
+} */
+
+ul{
+  position: absolute;
+    z-index: 0;
+    top: 220px;
+    left: 68%;
+}
+ul li{
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 4px;
+}
+.c1 h3{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+.c2 h3{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+.c3 h3{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+.c4 h3{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+}
+.quest{
+  position: absolute;
+  margin-top: 130px;
+  position: absolute;
+  top: 0;
+  color: #454444;
+  letter-spacing: 1.5px;
+  margin-left: 990px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+}
+.ques1{
+  position: absolute;
+  margin-top: 340px;
+  position: absolute;
+  top: 0;
+  color: #454444;
+  letter-spacing: 0.5px;
+  margin-left: 970px;
+  font-family: 'Rajdhani', sans-serif;
+  width: 35vw;
+}
+
+.header-details{
+  position: absolute;
+  left: 0;
+}
+
+ .c2 > img ,.c3 > img, .c4 > img {
+  height: 183px;
+    padding: 10px;
+    width: 181px;
+    border-radius: 36px;
+
+}
+.c1 > img{
+  height: 174px;
+  padding: 18px;
+  padding-top: 17px;
+  width: 204px;
+  margin-top: 7px;
+  border-radius: 36px;
+}
+
+.c4 > img{
+  height: 183px;
+  padding: 10px;
+  width: 181px;
+  border-radius: 36px;
+}
+.depression > p , .stress > p , .anxiety > p, .grief > p {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.depression > h3 , .stress > h3 , .anxiety > h3, .grief > h3 {
+  font-size: 22px;
+}
+
+.depression , .stress , .anxiety , .grief{
+  margin-left: 15px;
+  padding-top: 10px;
+  position: relative;
+
+}
+ .point{
+  cursor: pointer;
+}
+.c2 , .c4{
+  margin-left: 100px;
+}
+  .assesment-btn{
+   border: none;
+   padding: 6px;
+   background-color: white;
+   position: absolute;
+   right: 15px;
+   
+   bottom: 29px;
+  }
+  
+.material-symbols-outlined {
+  position: absolute;
+  right: 0;
+  border-radius: 20px;
+
+  background-color:#E1FFFE;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.c1, .c2, .c3, .c4 {
+  display: flex;
+  border: 1px solid lightgray;
+  flex: 1;
+  border-radius: 30px;
+  width: 37vw;
+  height: 20vh;
+  position: relative;
+  cursor: pointer;
+} 
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.firsttwo {
+  display: flex;
+}
+
+.lasttwo {
+  display: flex;
+}
+
+.headline {
+  width: 100%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  padding: 35px;
+  letter-spacing: 0.5px;
+}
+
+.lasttwo {
+  margin-top: 4vh;
+}
+
+.physical-content {
+  display: none; 
+}
+ 
+
+ 
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
+
+  @keyframes zoom-out {
+    0% {
+    transform: scale(1.5, 1.5);
+    }
+    100% {
+    transform: scale(1, 1);
+    }
+  }
+  
