@@ -1,1 +1,314 @@
+img{
+  height: 500px;
+  width: 500px;
+  object-fit: contain;
+}
 
+.blue{
+  /* background-color: #EDF5E1;
+  background-image: none; */
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+}
+
+/* #F76C6C */
+
+/* cyan -- #3AAFA9 */
+
+.red{
+  /* background-color: #A9C9FF;
+  background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%); */
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  
+}
+.orange{
+    background-color: #FFCB9A;
+    background-image: none;
+    /* background: url("./assets/welcome_background1.png"); */
+}
+
+.orange img{
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+.purple{
+    background-color: #C3A9FF ;
+    background-image: none;
+}
+.green{
+   background-color: #3AAFA9; 
+   background-image: none;
+   color: #EDF5E1;
+}
+.main h1{
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    letter-spacing: 6px;
+    padding-top: 35px;
+    padding-left: 50px;
+    font-size: 4rem;
+    
+}
+/* .main img{
+    filter: drop-shadow(0px 6px 7px rgb(60, 16, 135));
+} */
+.main{
+    padding: 40px;
+    /* box-shadow: 0px 25px 30px 0px rgb(56, 23, 23); */
+}
+.illustration1{
+    /* height: 500px;
+    width: 500px; */
+    padding-top: 100px;    
+    /* margin-left: -340px; */
+}
+
+.illustration1 > img{
+  height: 606px;
+  width: 945px;
+  z-index: -20;
+  filter: drop-shadow(0px 5px 4px rgb(47, 20, 20));
+}
+.illustration_comment1{
+    
+    margin-left: 302px;
+    height: 400px;
+    margin-top: -101px;
+    width: 600px;
+    font-family: 'Lobster', cursive;
+    color: black;
+    z-index: 20;
+    position: absolute;
+    top: 235px;
+}
+.spacex__mainForm{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spacex__mainForm h2{
+    font-family: 'Ropa Sans', sans-serif;
+    letter-spacing: 2px;
+}
+.spacex__mainForm form {
+    display: flex;
+    flex-direction: column;
+}
+.spacex__mainForm p {
+    color: rgb(125, 124, 124);
+    font-family: 'Ropa Sans', sans-serif;
+    font-size:14.5px;    
+    font-weight: lighter;
+}
+
+.spacex__mainForm input{
+    padding-left: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    outline-width: 0;
+    outline: 0;
+    border: 1px solid #d9d7d7;
+    width: 32vw;
+    height: 7vh;
+    margin-bottom: 15px;
+    margin-top:10px ;
+}
+
+.spacex__password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d9d7d7;
+    width: 32vw;
+    height: 7vh;
+    margin-bottom: 15px;
+}
+
+.spacex__password > input{
+    border: none;
+    outline-width: 0;
+    height: 2.5vh;
+    margin-top: 15px;
+}
+a{
+  text-decoration: none;
+}
+.register-button1 {
+  width: 360px;
+    text-align: center;
+  }
+  .register-button1 button {
+    color: white;
+    background: black;
+    border: 1px solid black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.25em 4em;
+    margin-top: 1em;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    width: 19vw;
+    margin-right: 0;
+    height: 6.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .register-button1 button::before {
+    background: black;
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+  .register-button1 button::after {
+    background: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+  .register-button1 button:hover {
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    
+  }
+  .register-button2 {
+    width: 360px;
+      text-align: center;
+    }
+    .register-button2 button {
+      color: white;
+      background: black;
+      border: 1px solid black;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1.25em 4em;
+      margin-top: 1em;
+      position: relative;
+      overflow: hidden;
+      z-index: 100;
+      width: 19vw;
+      margin-right: 0;
+      height: 6.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   .register-button2 button::before {
+      background: black;
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    .register-button2 button::after {
+      background: white;
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    .register-button2 button:hover {
+      color: black;
+      cursor: pointer;
+      z-index: 1;
+      
+    }
+  .login::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform-origin: right center;
+    transform: scale3d(0, 1, 0);
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .login:hover::after {
+    height: 100%;
+    width: 100%;
+    transform: scale3d(1, 1, 1);
+    transform-origin: left center;
+  }
+  .spacex__password > input {
+    outline: 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+.hyperlink{
+    color: rgb(125, 124, 124);
+    width: 180px;
+    float: right;
+    margin-right: 2px;
+    font-size: 14px;
+    font-family: 'Ropa Sans', sans-serif;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.create1{
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+.create1:hover {
+    color: rgb(125, 124, 124);
+}
+
+.email:focus {
+    border: 1px solid black;
+}
+.first_name:focus {
+    border: 1px solid black;
+}
+.last_name:focus {
+    border: 1px solid black;
+}
+.spacex__password:focus {
+    border: 1px solid black;
+}
+::placeholder {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.spacex__mainForm > h2{
+  color: black;
+  font-size: 48px;
+}
+
+.spacex__mainForm > p{
+  color: rgb(23, 23, 23);
+  font-size: 22px;
+}
+
+#register-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.illustration-comment{
+  flex: 1;
+  position: relative;
+}
+
+.red_form1{
+  flex: 1;
+}
+.red_form2{
+  flex: 1;
+  display: none;
+}
+
+.login{
+  font-size:large;
+}
