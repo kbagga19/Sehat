@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/home_page.css">
+  <link rel="stylesheet" href="../styles/testimonial.css">
+  <link rel="stylesheet" href="../styles/date.css">
+  <link rel="stylesheet" href="../styles/mood.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+  <style>
+
+    df-messenger {
+     --df-messenger-bot-message: #878fac;
+     --df-messenger-button-titlebar-color: #FA8072;
+     --df-messenger-chat-background-color: #fafafa;
+     --df-messenger-font-color: white;
+     --df-messenger-send-icon: #878fac;
+     --df-messenger-user-message: #479b3d;
+    }
+  </style>
+  <nav>
+    <div class="image">
+    <a href="../html/home_page.html"><img src="/assets/sehat2.0 - Copy.png" alt="none" height="70px"  width="40px"></a>
+</div>
+
+ <ul class="navMain">
+     <li id="Mens"><a  href="../html/home_page.html">Home</a>
+      
+    </li>
+     <li id="Womens"><a  href="#cont">My Plan</a>
+      
+    </li>
+     <li id="Kids"><a href="#mcont">Therapist</a>
+    
+    </li>
+     <li id="Acc"><a href="#moody">Mood Tracker</a>
+        
+    <!-- </li>
+      <li id="Pre"><a href="#">Goals</a>
+      
+    </li> -->
+     <li id="Pre"><a href="#res">Resources</a>
+      
+    </li>
+ </ul>
+ <ul class="navRight">
+    <a href="../html/therapist.html"><li>Register as a Therapist</li></a>
+    <li><span class="material-symbols-outlined">
+      account_circle
+      </span></li>
+     <!-- <li class="navright__small"><a href="/index/account.html">ACCOUNT</a></li>
+     <li class="navright__small1">SEARCH</li>
+     <li><a href="#">CART (0)</a></li> -->
+ </ul>
+</nav>
+
+<div class="main-bot">
+  <!-- <img src="../assets/panda.png" height="200px" width="200px" alt=""> -->
+ </div>
+
+ <div class="main-content" id="mcont">
+   <div class='testimonial'>
+     <div class='testimonials'></div>
+     <div class='navigation'></div>
+     <div class='arrow-left'>
+       <i class='fa fa-chevron-left'></i>
+     </div>
+     <div class='arrow-right'>
+       <i class='fa fa-chevron-right'></i>
+     </div>
+   </div>
+</div>
+
+<div class="content2" id="cont">
+  <div class="calender-heading">My Plan</div>
+  <div id="calendar"></div>
+</div>
+  
+  <div class="mood-tracker" id="moody">
+    <div class="calender-heading">Mood Tracker</div>
+  <textarea id="input-diary" class="textarea-normal" autofocus placeholder="Sooo, what happened?"></textarea>
+  <!-- <div id="input-diary" style="height: 100px;"></div> -->
+  <!-- <p id="char-left">140 left</p> -->
+
+  <div class="container-mood-selector">
+      <!-- <h2>How does it make you feel?</h2> -->
+
+      <ul id="moods">
+          <li onclick="sendInfo('happy')" id="mood-happy"><img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/slightly-smiling-face_1f642.png" width="60" title="happy"></li>
+          <li onclick="sendInfo('neutral')" id="mood-neutral"><img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/expressionless-face_1f611.png" width="60" title="neutral"></li>
+          <li onclick="sendInfo('sad')" id="mood-sad"><img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/slightly-frowning-face_1f641.png" width="60" title="sad"></li>
+          <li onclick="sendInfo('unsure')" id="mood-unsure"><img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/face-without-mouth_1f636.png" width="60" title="unsure"></li>
+      </ul>
+  </div>
+
+  <div class="container-meter">
+
+      <div id="mood-meter">
+          <div id="meter-happy" class="mood-meter-perc"></div><div id="meter-neutral" class="mood-meter-perc"></div><div id="meter-sad" class="mood-meter-perc"></div><div id="meter-unsure" class="mood-meter-perc"></div>
+      </div>
+
+  </div>    
+
+  <ul id="mood-sorter">
+      <li id="sort-all" class="sort-selected">All</li><li id="sort-happy">Happy</li><li id="sort-neutral">Neutral</li><li id="sort-sad">Sad</li><li id="sort-unsure">Unsure</li>
+  </ul>
+
+  <p id="empty-entries" class="text-center">You haven't logged any entry yet.<br>Think about what happened today!</p>
+
+  <ul id="entries">
+      <!-- <li class="entry sad-entry">
+          <p class="entry-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus tortor nunc, vel finibus felis ultricies nec. Ut dapibus est vitae tortor maximus tristique.</p>
+
+          <div class="overflow-hidden">
+              <span class="timestamp">10 May 18, 9:00 PM</span>  
+              <div class="actions">
+                  <span class="">Delete</span>  
+                  <span class="">Edit</span>  
+              </div>
+          </div>
+      </li> -->
+  </ul>
+  </div>
+
+  <div class="resources" id="res">
+    <h1 class="res_head">Sehat Resources</h1>
+    <div class="resourse_contain">
+
+      <div class="resourse1">
+        <img src="https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" height="100px" width="100px" alt="">
+        <h4>ARTICLE | 3 MIN</h4>
+        <h3>The Difference between Sadness and Depression</h3>
+      </div>
+      <div class="resourse1">
+        <img src="https://images.unsplash.com/photo-1489641024260-20e5cb3ee4aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80" height="100px" width="100px" alt="">
+        <h4>ARTICLE | 3 MIN</h4>
+        <h3>My journey with Depression</h3>
+      </div>
+      <div class="resourse1">
+        <img src="https://images.unsplash.com/photo-1604971666408-9dcd56ece0bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" height="100px" width="100px" alt="">
+        <h4>ARTICLE | 5 MIN</h4>
+        <h3>Depression: What is it and how to get better with medication?</h3>
+      </div>
+      <div class="resourse1">
+        <img src="https://images.unsplash.com/photo-1624704200567-760cf26ae848?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" height="100px" width="100px" alt="">
+        <h4>ARTICLE | 4 MIN</h4>
+        <h3>How Important is Self-care to Your Overall Mental Health?</h3>
+      </div>
+    </div>
+    <div class="more">
+      <div class="view">VIEW ALL RESOURSES </div>
+      <span class="material-symbols-outlined">arrow_forward_ios</span>
+    </div>
+  </div>
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="EVA"
+  agent-id="e7aed97c-e769-4bc0-8e3e-d84be6d2e027"
+  language-code="en"
+  chat-icon="https://static.vecteezy.com/system/resources/previews/007/404/904/non_2x/cute-cartoon-panda-lying-down-cartoon-illustration-cartoon-clipart-free-vector.jpg"
+></df-messenger>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../js/mood.js"></script>
+  <script src="../js/date.js"></script>
+  <script src="../js/home_page.js"></script>
+</body>
+</html>
