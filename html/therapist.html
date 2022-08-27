@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/therapist.css">
+  <link rel="stylesheet" href="../styles/testimonial.css">
+  <link rel="stylesheet" href="../styles/date.css">
+  <link rel="stylesheet" href="../styles/mood.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+  <style>
+
+    df-messenger {
+     --df-messenger-bot-message: #878fac;
+     --df-messenger-button-titlebar-color: #FA8072;
+     --df-messenger-chat-background-color: #fafafa;
+     --df-messenger-font-color: white;
+     --df-messenger-send-icon: #878fac;
+     --df-messenger-user-message: #479b3d;
+    }
+  </style>
+  <nav>
+    <div class="image">
+    <a href="../html/home_page.html"><img src="/assets/sehat2.0 - Copy.png" alt="none" height="70px"  width="40px"></a>
+</div>
+
+ <ul class="navMain">
+     <li id="Mens"><a  href="../html/home_page.html">Home</a>
+      
+    </li>
+     <li id="Womens"><a  href="#cont">My Plan</a>
+      
+    </li>
+     <li id="Kids"><a href="#mcont">Therapist</a>
+    
+    </li>
+     <li id="Acc"><a href="#moody">Mood Tracker</a>
+        
+    <!-- </li>
+      <li id="Pre"><a href="#">Goals</a>
+      
+    </li> -->
+     <li id="Pre"><a href="#res">Resources</a>
+      
+    </li>
+ </ul>
+ <ul class="navRight">
+    <a href="../html/therapist.html"><li>Register as a Therapist</li></a>
+    <li><span class="material-symbols-outlined">
+      account_circle
+      </span></li>
+     <!-- <li class="navright__small"><a href="/index/account.html">ACCOUNT</a></li>
+     <li class="navright__small1">SEARCH</li>
+     <li><a href="#">CART (0)</a></li> -->
+ </ul>
+</nav>
+
+<div class="bg">
+  <img  src="../assets/therapist.png" alt="">
+    <div class="ther-form">
+
+      <div class="red_form1">
+        <div class="mainForm">
+          <h2>REGISTER</h2>
+          <p>Please fill in the information below:</p>
+          <form action="#">
+            <input id="username" class="first_name" type="text" name="fname" placeholder="First name">
+            <input class="last_name" type="text"name="lname" placeholder="Last name">
+            <input class="email" type="text"name="email" placeholder="Email">
+            <input class="password" type="text" name="password" placeholder="Password">
+            <input class="specialist" type="text" name="password" placeholder="Specialist in">
+            <input class="gender" type="text" name="password" placeholder="Gender">
+            
+            <section class="register-button1">
+              <button class ="login" type="button">SIGNUP AS THERAPIST</button>
+            </section>  
+          </form>
+        </div>
+      </div>
+    </div>
+      <div class="main-bot">
+        <!-- <img src="../assets/panda.png" height="200px" width="200px" alt=""> -->
+      </div>
+      
+ 
+      
+      
+      
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <df-messenger
+      intent="WELCOME"
+      chat-title="EVA"
+      agent-id="e7aed97c-e769-4bc0-8e3e-d84be6d2e027"
+      language-code="en"
+  chat-icon="https://static.vecteezy.com/system/resources/previews/007/404/904/non_2x/cute-cartoon-panda-lying-down-cartoon-illustration-cartoon-clipart-free-vector.jpg"
+></df-messenger>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="../js/mood.js"></script>
+  <script src="../js/date.js"></script>
+  <script src="../js/therapist.js"></script>
+</body>
+</html>
