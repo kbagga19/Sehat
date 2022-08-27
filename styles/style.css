@@ -84,29 +84,29 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     position: absolute;
     top: 235px;
 }
-.spacex__mainForm{
+.mainForm{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.spacex__mainForm h2{
+.mainForm h2{
     font-family: 'Ropa Sans', sans-serif;
     letter-spacing: 2px;
 }
-.spacex__mainForm form {
+.mainForm form {
     display: flex;
     flex-direction: column;
 }
-.spacex__mainForm p {
+.mainForm p {
     color: rgb(125, 124, 124);
     font-family: 'Ropa Sans', sans-serif;
     font-size:14.5px;    
     font-weight: lighter;
 }
 
-.spacex__mainForm input{
+.mainForm input{
     padding-left: 12px;
     text-decoration: none;
     font-size: 15px;
@@ -119,7 +119,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     margin-top:10px ;
 }
 
-.spacex__password {
+.password {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +129,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     margin-bottom: 15px;
 }
 
-.spacex__password > input{
+.password > input{
     border: none;
     outline-width: 0;
     height: 2.5vh;
@@ -233,7 +233,7 @@ a{
     transform: scale3d(1, 1, 1);
     transform-origin: left center;
   }
-  .spacex__password > input {
+  .password > input {
     outline: 0;
 }
 
@@ -271,7 +271,7 @@ form{
 .last_name:focus {
     border: 1px solid black;
 }
-.spacex__password:focus {
+.password:focus {
     border: 1px solid black;
 }
 ::placeholder {
@@ -280,12 +280,12 @@ form{
     font-size: 20px;
 }
 
-.spacex__mainForm > h2{
+.mainForm > h2{
   color: black;
   font-size: 48px;
 }
 
-.spacex__mainForm > p{
+.mainForm > p{
   color: rgb(23, 23, 23);
   font-size: 22px;
 }
