@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/smoking_assessment.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</head>
+<body>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+    
+    <div id="main-content">
+      
+      <div class="header">
+        <div class="zoomout">
+          <img class="bg_image" src="/assets/stop_smoking.jpg" alt="">
+        </div>
+        <!-- <div class="btn"> 
+          <button class="btn-mental btn_active_psudo">MENTAL</button>
+          <button class="btn-physical btn_default_psudo">PHYSICAL</button>
+           </div> -->
+          
+      </div>
+       <h2 class="quest">STOP SMOKING</h2>
+       <h3 class="ques1"><em>"Remember to hold on to hope as you work on building a better life for yourself"</em></h3>
+    
+    </div>
+
+    <div class="content">
+      <h1 class="main-heading">Health Assessment</h1>
+      <div class="c2">
+        <img src="/assets/1.jpg" alt="" height="50px" width="50px">
+        <div class="stress">
+          <h3>Q.1)</h3>
+          <p>Why do you want to quit ?</p>
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6/24' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                I've been sleeping more than usual</label>
+              <span id='result-12'></span>
+            </div>
+          
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                I've been sleeping less than usual</label>
+              <span id='result-12'></span>
+            </div>
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                I haven't noticed any changes</label>
+              <span id='result-12'></span>
+            </div>
+          
+        </div>
+      </div>
+      <div class="c2">
+        <img src="/assets/2 (2).jpg" alt="" height="50px" width="50px">
+        <div class="stress">
+          <h3>Q.2)</h3>
+          <p>How many cigarette do you smoke per day ?</p>
+          
+          <div id='block-12' style='padding: 10px;'>
+            <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+              <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+              Never</label>
+            <span id='result-12'></span>
+          </div>
+
+          <div id='block-12' style='padding: 10px;'>
+            <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+              <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+              Always</label>
+            <span id='result-12'></span>
+          </div>
+
+          <div id='block-12' style='padding: 10px;'>
+            <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+              <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+              Not very often</label>
+            <span id='result-12'></span>
+          </div>
+        </div>
+      </div>
+      <div class="c2">
+        <img src="/assets/3.jpg" alt="" height="50px" width="50px">
+        <div class="stress">
+          <h3>Q.3)</h3>
+          <p>when do you smoke in a day?</p>
+          
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                Completely untrue</label>
+              <span id='result-12'></span>
+            </div>
+
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                Somewhat untrue</label>
+              <span id='result-12'></span>
+            </div>
+
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                I am unsure</label>
+              <span id='result-12'></span>
+            </div>
+        </div>
+      </div>
+
+      <h1 class="main-heading">Symptoms Assessment</h1>
+      <div class="c2">
+        <img src="/assets/4.png" alt="" height="50px" width="50px">
+        <div class="stress">
+          <h3>Q.4)</h3>
+          <p>Does your family knows about your addiction?</p>
+          
+          <div id='block-12' style='padding: 10px;'>
+            <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+              <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+              Strongly disagree</label>
+            <span id='result-12'></span>
+          </div>
+
+          <div id='block-12' style='padding: 10px;'>
+            <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+              <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+              Strongly agree</label>
+            <span id='result-12'></span>
+          </div>
+
+          <div id='block-12' style='padding: 10px;'>
+            <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+              <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+              Neutral</label>
+            <span id='result-12'></span>
+          </div>
+        </div>
+      </div>
+      <div class="c2">
+        <img src="/assets/5.jpg" alt="" height="50px" width="50px">
+        <div class="stress">
+          <h3>Q.5)</h3>
+          <p>Did you experience any health issues due to smoking ?
+          </p>
+          
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                Always</label>
+              <span id='result-12'></span>
+            </div>
+
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                Maybe Sometimes</label>
+              <span id='result-12'></span>
+            </div>
+
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 1rem; cursor: pointer;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px; cursor: pointer;' />
+                Not at all</label>
+              <span id='result-12'></span>
+            </div>
+        </div>
+      </div>
+     
+       
+      <section class="register-button" onclick="goToAssessment()">
+        <button class ="login" type="submit">Submit</button>
+    </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="../js/smoking_assessment.js"></script>
+</body>
+</html>
