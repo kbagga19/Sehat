@@ -39,7 +39,7 @@ sell.on("click", function() {
 
 
 const goToAssessment = (targetPlace) =>{
-	window.location.href = `http://localhost:5500/html/${targetPlace}.html`;
+	window.location.href = `https://main--sehatsite.netlify.app/html/${targetPlace}.html`;
 }
 
 
