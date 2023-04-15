@@ -3,5 +3,5 @@ $(window).on("load",function(){
   });
 
   const goToAssessment = () =>{
-    window.location.href = `http://localhost:5500/html/user_graph.html`;
+    window.location.href = `https://main--sehatsite.netlify.app/html/user_graph.html`;
   }
