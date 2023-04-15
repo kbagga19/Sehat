@@ -3,7 +3,7 @@ $(window).on("load",function(){
   });
 
   const goToAssessment = () =>{
-    window.location.href = `http://localhost:5500/html/home_page.html`;
+    window.location.href = `https://main--sehatsite.netlify.app/html/home_page.html`;
   }
 
 
