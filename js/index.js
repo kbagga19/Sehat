@@ -87,7 +87,7 @@ function sendmail(){
     .then(function(data) {
         console.log(data)
         alert('Your mail has been sent. Thank you for connecting.')
-        window.location.href = `http://localhost:5500/html/welcome.html`
+        window.location.href = `https://main--sehatsite.netlify.app/html/welcome.html`
       })
         
     .catch(error => console.error('Error:', error)); 
@@ -98,7 +98,7 @@ function sendmail(){
     const userName = document.getElementById("username").value;
     
      localStorage.setItem("usname", JSON.stringify(userName));
-     window.location.href = `http://localhost:5500/html/welcome.html`;
+     window.location.href = `https://main--sehatsite.netlify.app/html/welcome.html`;
   
     }
 
